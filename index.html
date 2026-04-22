@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TelsizApp - Destek & İletişim / Support</title>
+    <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --text-color: #2c3e50;
+            --accent-color: #ff8c00; 
+            --card-bg: #ffffff;
+            --border-color: #dcdde1;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --text-color: #f5f6fa;
+                --card-bg: #2d2d2d;
+                --border-color: #404040;
+            }
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        header {
+            margin-bottom: 30px;
+        }
+
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            background-color: var(--accent-color);
+            border-radius: 20px;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: var(--text-color);
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .email-box {
+            background: var(--bg-color);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px dashed var(--accent-color);
+            margin: 25px 0;
+        }
+
+        .email-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            word-break: break-all;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        .description {
+            font-size: 15px;
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--accent-color);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            margin-top: 30px;
+            font-size: 13px;
+            opacity: 0.6;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <div class="icon-circle">T</div>
+        <span class="badge">DESTEK / SUPPORT</span>
+        <h1>TelsizApp Yardım Merkezi</h1>
+    </header>
+
+    <p class="description">
+        Uygulama ile ilgili her türlü soru, hata bildirimi veya önerileriniz için bizimle iletişime geçebilirsiniz. Size en kısa sürede dönüş yapacağız.
+    </p>
+
+    <div class="email-box">
+        <p style="margin-top: 0; font-size: 14px;">E-posta Adresimiz:</p>
+        <a href="mailto:okkescnklnc@gmail.com" class="email-link">okkescnklnc@gmail.com</a>
+    </div>
+
+    <p class="description" style="font-size: 13px; font-style: italic;">
+        For any questions, bug reports, or suggestions regarding TelsizApp, please feel free to contact us.
+    </p>
+
+    <footer>
+        TelsizApp - Amateur Radio Exam Prep Assistant<br>
+        &copy; 2026 Ökkeş Çinkılınç
+    </footer>
+</div>
+
+</body>
+</html>
